@@ -1,0 +1,5 @@
+# MÃ NGUỒN CHỨA THÔNG TIN BẢO MẬT CAO - TUYỆT MẬT
+AWS_ACCESS_KEY_ID = 'AKIA38859509EXAMPLE'
+AWS_SECRET_ACCESS_KEY = 'wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY'
+OPENAI_API_KEY = 'sk-proj-8429375370abcdefghij'
+DB_CONNECTION_STRING = 'postgresql://admin:P@ssw0rdTopSecret2026!@prod-db.corp.internal:5432/finance_db'

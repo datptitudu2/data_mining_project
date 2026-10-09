@@ -1,0 +1,31 @@
+services:
+  minio:
+    image: quay.io/minio/minio:latest
+    container_name: minio_lakehouse
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin123
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    restart: always
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres_dwh
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: dataeng
+      POSTGRES_PASSWORD: dataeng123
+      POSTGRES_DB: dwh
+    volumes:
+      - pg_data:/var/lib/postgresql
+    restart: always
+
+volumes:
+  minio_data:
+  pg_data:

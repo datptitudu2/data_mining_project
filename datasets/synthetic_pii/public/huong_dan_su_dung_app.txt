@@ -1,0 +1,4 @@
+TÀI LIỆU HƯỚNG DẪN SỬ DỤNG HỆ THỐNG NỘI BỘ
+Bước 1: Mở trình duyệt và truy cập cổng portal.
+Bước 2: Sử dụng tài khoản định danh để đăng nhập.
+Bước 3: Chọn module công việc tương ứng.

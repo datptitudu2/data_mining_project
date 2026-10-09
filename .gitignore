@@ -1,0 +1,54 @@
+# ==============================================================================
+# .gitignore cho Đồ án DLP Analytics & UEBA (CyberGuardrails)
+# ==============================================================================
+
+# Python & Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker Data Volumes
+minio_data/
+pg_data/
+
+# Dữ liệu nén & File kích thước lớn (GitHub giới hạn file < 50MB-100MB)
+*.tar.bz2
+*.tar.gz
+*.bz2
+*.zip
+*.7z
+*.rar
+*.pdf
+
+# Dataset dung lượng lớn
+datasets/enron/
+datasets/cmu_cert/r1/http.csv
+datasets/cmu_cert/r1/logon.csv
+datasets/cmu_cert/r1/device.csv
+datasets/cmu_cert/r1.tar.bz2
+
+# Thư mục bài tập thực hành lab cũ (hoặc chỉ commit code)
+decision_tree/email_spam/emails.csv
+
+# Lakehouse Parquet Files (Tự động sinh ra khi chạy pipeline ELT)
+lake/bronze/logs/
+lake/silver/
+lake/gold/
+
+# OS temporary files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
